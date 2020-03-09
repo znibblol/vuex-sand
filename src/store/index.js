@@ -27,6 +27,12 @@ export default new Vuex.Store({
         .catch(error => {
           throw new Error(`Api ${error}`);
         });
+    },
+    submitPost() {
+      axios.post("./api.json", {
+        title: '' + this.data.title,
+        body: '' + this.data.body
+      })
     }
   },
   modules: {}

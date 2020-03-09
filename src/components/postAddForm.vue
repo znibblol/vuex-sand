@@ -37,10 +37,10 @@
       <h3>Preview</h3>
       <div class="card">
         <div class="card-header bg-dark text-light">
-          <h4>{{ title }}</h4>
+          <h4>{{ title || "Title" }}</h4>
         </div>
         <div class="card-body bg-light text-dark">
-          <p>{{ body }}</p>
+          <p>{{ body || "The body of the post" }}</p>
         </div>
       </div>
     </div>
